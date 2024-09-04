@@ -1,6 +1,6 @@
 # Watcher
 
-**Watcher** is a lightweight Python package designed for developers who prefer hot-reloading files from the terminal. It uses the `entr` package with Python's `subprocess` module to watch files for changes and automatically execute them, displaying real-time output and tracebacks directly in the terminal. Unlike pytest, **Watcher** provides a minimal setup for running and debugging your scripts in real-time.
+**Watcher** is a lightweight Python package designed for developers who prefer hot-reloading files from the terminal. I'm sure there are pre-made solutions available with many more features so you should probably try those first. It uses the `entr` package with Python's `subprocess` module to watch files for changes and automatically execute them, displaying real-time output and tracebacks directly in the terminal. Unlike pytest, **Watcher** provides a minimal setup for running and debugging your scripts in real-time.
 
 ## Features
 
@@ -20,18 +20,18 @@
    ```
 
 2. **Install Watcher**:
-   You can install the Watcher package using pip:
+   You can install the Watcher package using pip by navigating to your cloned package dir and run:
 
    ```bash
-   pip install watcher
+   pip install
    ```
 
 ## Usage
 
-Once installed, you can use the `watcher` command to monitor and execute a script whenever it changes:
+Once installed, you can use the `watch` command to monitor and execute a script whenever it changes:
 
 ```bash
-watcher /path/to/your/script.py
+watch /path/to/your/script.py
 ```
 
 This command will monitor the specified file and automatically re-run it each time you save changes, providing real-time feedback in the terminal.
@@ -48,7 +48,7 @@ print("Hello, World!")
 Run the following command to start watching the file:
 
 ```bash
-watcher example.py
+watch example.py
 ```
 
 Now, every time you edit and save `example.py`, **Watcher** will re-run it, and you’ll immediately see the output in your terminal.
